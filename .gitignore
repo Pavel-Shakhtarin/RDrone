@@ -1,0 +1,4 @@
+# Project exclude paths
+/RDroneClient/.gradle/
+/RDroneClient/build/
+/RDroneClient/build/classes/kotlin/main/

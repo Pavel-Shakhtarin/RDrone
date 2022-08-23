@@ -1,0 +1,29 @@
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+eclipse.project.name = appName + '-core'
+
+dependencies {
+	api "com.badlogicgames.gdx:gdx:$gdxVersion"
+	api "io.github.libktx:ktx-app:$ktxVersion"
+	api "io.github.libktx:ktx-assets:$ktxVersion"
+	api "io.github.libktx:ktx-graphics:$ktxVersion"
+	api "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+	implementation("io.rsocket:rsocket-core:1.1.2")
+	implementation("io.rsocket:rsocket-transport-netty:1.1.2")
+	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.6")
+	implementation("com.fasterxml.jackson.core:jackson-databind:2.13.3")
+	implementation("ch.qos.logback:logback-classic:1.2.11")
+	implementation("io.insert-koin:koin-core-jvm:3.2.0")
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://s01.oss.sonatype.org' }
+	mavenLocal()
+	maven { url 'https://repo.spring.io/milestone' }
+	google()
+	gradlePluginPortal()
+	maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+	maven { url 'https://s01.oss.sonatype.org/content/repositories/snapshots/' }
+}
+
