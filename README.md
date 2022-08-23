@@ -1,5 +1,8 @@
 # RDrone
 
+Небольшое демо видео с визуализацией:
+https://youtu.be/OjmyBbcyAE8
+
 ## RDroneClient
 
 #### **Состоит из web сервера и RSocket клиента**
